@@ -1,6 +1,6 @@
 ## Hello World Everyday
 
-This repo will contains only 1 file.
+This repo contains only 1 file.
 
 ```Hello World.txt```
 
