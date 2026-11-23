@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit and Push to Main
         run: |
-          git config user.name "mfarrasmajid[bot]"
-          git config user.email "m.farras.majid@gmail.com"
+          git config user.name "mfarrasmajid"
+          git config user.email "47713041+mfarrasmajid@users.noreply.github.comm"
 
           git add "Hello World.txt"
           git commit -m "Auto append Hello World"
