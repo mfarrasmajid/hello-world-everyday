@@ -3,7 +3,11 @@ name: Auto Append Hello World
 
 on:
   schedule:
-    - cron: '7 6,20 * * *'
+    - cron: '0 */4 1-31/4 * *'
+      timezone: 'Asia/Jakarta'
+    - cron: '0 0,12 2-31/4 * *'
+      timezone: 'Asia/Jakarta'
+    - cron: '0 0,8,16 3-31/4 * *'
       timezone: 'Asia/Jakarta'
   workflow_dispatch:
 
