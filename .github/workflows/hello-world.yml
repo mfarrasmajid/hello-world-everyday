@@ -3,11 +3,13 @@ name: Auto Append Hello World
 
 on:
   schedule:
-    - cron: '0 */4 1-31/4 * *'
+    - cron: '7 */4 1-31/4 * *'
       timezone: 'Asia/Jakarta'
-    - cron: '0 0,12 2-31/4 * *'
+    - cron: '7 0,12 2-31/4 * *'
       timezone: 'Asia/Jakarta'
-    - cron: '0 0,8,16 3-31/4 * *'
+    - cron: '7 0,8,16 3-31/4 * *'
+      timezone: 'Asia/Jakarta'
+    - cron: '7 0,12 4-31/4 * *'
       timezone: 'Asia/Jakarta'
   workflow_dispatch:
 
@@ -36,7 +38,7 @@ jobs:
       - name: Commit and Push to Main
         run: |
           git config user.name "mfarrasmajid"
-          git config user.email "47713041+mfarrasmajid@users.noreply.github.comm"
+          git config user.email "47713041+mfarrasmajid@users.noreply.github.com"
 
           git add "Hello World.txt"
           git commit -m "Auto append Hello World"
